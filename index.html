@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio Clim&aacute;tico</title>
+
+    <!-- Icono -->
+    <link rel="icon" type="image/png" href="img/logo.ico" />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <!-- Botones Flotantes -->
+    <div class="btn-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=+50371732016" class="nav-link text-facebook float-right"
+            target="_blank">
+            <i class="fab fa-whatsapp fa-3x"></i>
+        </a>
+    </div>
+    <div class="btn-messenger">
+        <a href="https://m.me/jefferson.pineda.754" class="nav-link text-facebook float-right" target="_blank">
+            <i class="fab fa-facebook-messenger fa-3x"></i>
+        </a>
+    </div>
+
+
+    <!-- Clima -->
+    <div class="divInfo img-thumbnail p-2 alert alert-dismissible alert-success animate__animated animate__flip">
+        <img src="img/cargando.gif" class="imgClima">
+        <br>
+        <span class="lblTemperatura"></span>
+        <br>
+        <span class="lblCiudad"></span>
+    </div>
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                Cambio Clim&aacute;tico
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="views/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="views/covid.html">Covid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="views/galery.html">Galery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="views/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-success my-2 mx-1" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="@getbootstrap">Login</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Corousel -->
+    <div class="cuerpo animate__animated animate__bounce">
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="margin-top: 9.5%;">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/carousel2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Lucha contra el cambio clim&aacute;tico</h2>
+                            <h5>La ciencia no puede ser m&aacute;s clara: el cambio clim&aacute;tico es un hecho y la
+                                acci&oacute;n del
+                                ser humano es la responsable.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Lucha contra el cambio clim&aacute;tico</h2>
+                            <h5>La ciencia no puede ser m&aacute;s clara: el cambio clim&aacute;tico es un hecho y la
+                                acci&oacute;n del
+                                ser humano es la responsable.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel1.jpg " class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Lucha contra el cambio clim&aacute;tico</h2>
+                            <h5>La ciencia no puede ser m&aacute;s clara: el cambio clim&aacute;tico es un hecho y la
+                                acci&oacute;n del
+                                ser humano es la responsable.</h5>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Cards -->
+    <div class="container mt-4 mb-4">
+        <div class="row text-center">
+            <div class="col col-md-4 animate__animated animate__backInLeft">
+                <div class="card">
+                    <div class="icon">
+                        <img class="card-img-top h-50" src="img/cards2.jpg" alt="Card image">
+                    </div>
+                    <p class="text-secondary">Olas de calor</p>
+                    <h3 class="text-secondary">Olas de calor</h3>
+                    <p class="card-body text-secondary">Greenpeace indica que se
+                        repetir&aacute;n cada verano y superar&aacute;n los r&eacute;cords de
+                        temperaturas hasta ahora registrados.</p>
+                </div>
+            </div>
+            <div class="col col-md-4 animate__animated animate__backInUp">
+                <div class="card ">
+                    <img class="card-img-top h-50" src="img/cards1.jpg" height="50%" alt="Card image">
+                    <p class="text-secondary">Glaciares pirenaicos</p>
+                    <h3 class="text-secondary">P&eacute;rdida de glaciares</h3>
+                    <p class="card-body text-secondary">Se han perdido ya más del 80% de los glaciares pirenaicos y para
+                        2050 podr&iacute;an desaparecer irreversiblemente.</p>
+                </div>
+            </div>
+            <div class="col col-md-4 animate__animated animate__backInRight
+            ">
+                <div class="card">
+                    <img class="card-img-top h-50" src="img/cards3.jpg" height="50%" alt="Card image">
+                    <p class="text-secondary">grieta en Larsen C</p>
+                    <h3 class="text-secondary">Grieta en Larsen C</h3>
+                    <p class="card-body text-secondary">El gigantesco iceberg ya flota a la deriva, seg&uacute;n han
+                        confirmado desde el proyecto MIDAS, quienes certificaron su desprendimiento</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- CardsBody -->
+    <div class="container">
+        <!-- Consecuencias -->
+        <div class="card border-danger mb-3">
+            <div class="card-header text-center bg-danger">
+                <h1 class="text-white">Consecuencias del cambio clim&aacute;tico</h1>
+            </div>
+            <div class="card-body">
+                <!-- Card1 -->
+                <div class="card mb-3 border-danger">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="img/info1.png" class="card-img" alt="Imagen">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Deshielo y aumento del nivel del mar.</h4>
+                                <p class="card-text">El volumen del agua aumenta cuando se calienta. Al mismo tiempo, el
+                                    calentamiento global hace que se derritan las capas de hielo de los polos y los
+                                    glaciares.</p>
+                                <p>La combinaci&oacute;n de esos cambios est&aacute; provocando el aumento del nivel de
+                                    los
+                                    oc&eacute;anos,
+                                    que causa inundaciones y erosión en las zonas costeras y de baja altitud.</p>
+                                <p class="card-text"><small class="text-muted">Canal de Lemaire</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card2 -->
+                <div class="card mb-3 border-danger">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Condiciones meteorol&oacute;gicas extremas y aumento de las
+                                    precipitaciones.</h4>
+                                <p class="card-text">Las fuertes lluvias y otros fen&oacute;menos clim&aacute;ticos
+                                    extremos son cada
+                                    vez m&aacute;s frecuentes y pueden provocar inundaciones y el deterioro de la
+                                    calidad del
+                                    agua, e incluso en algunas zonas una progresiva disminuci&oacute;n de los recursos
+                                    h&iacute;dricos.</p>
+                                <p class="card-text"><small class="text-muted">Un hurac&aacute;n categor&iacute;a
+                                        4</small></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/info2.jpg" class="card-img" alt="Imagen">
+                        </div>
+                    </div>
+                </div>
+                <a href="views/cardsBody/consecuencias.html" class="btn btn-danger">Ver M&aacute;s</a>
+            </div>
+        </div>
+
+        <!-- Causas -->
+        <div class="card border-warning mb-3">
+            <div class="card-header text-center bg-warning">
+                <h1 class="text-white">Causas del cambio clim&aacute;tico</h1>
+            </div>
+            <div class="card-body">
+                <!-- Card1 -->
+                <div class="card mb-3 border-warning">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="img/causas1.jpg" class="card-img" alt="Imagen">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">La industria.</h4>
+                                <p class="card-text">Podr&iacute;amos pensar que industrias como la qu&iacute;mica o la
+                                    petrolera son
+                                    dos de las principales causas del cambio clim&aacute;tico. As&iacute; es, pero no
+                                    est&aacute;n solas:
+                                    aunque no lo parezca, industrias como la de los colorantes, del PVC, del cloro o de
+                                    la metalurgia tambi&eacute;n afectan en gran medida, ya que generan una gran
+                                    cantidad de
+                                    residuos, algunos de ellos altamente t&oacute;xicos.</p>
+                                <p class="card-text"><small class="text-muted">Industrias generando CO2.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card2 -->
+                <div class="card mb-3 border-warning">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Generación excesiva de residuos.</h4>
+                                <p class="card-text">Cada persona que vive en Europa genera m&aacute;s de un kilo y
+                                    medio de
+                                    basura al día. El 60% de esta basura consiste en envases y bolsas de
+                                    pl&aacute;stico. En
+                                    este punto, la poblaci&oacute;n tiene la clave para reducir los residuos, y es
+                                    posible
+                                    hacerlo con peque&ntilde;as acciones cotidianas. En este artículo encontrar&aacute;s
+                                    m&aacute;s
+                                    informaci&oacute;n sobre la cantidad de basura que se genera diariamente en el
+                                    mundo.</p>
+                                <p class="card-text"><small class="text-muted">Costas con basura.</small></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/causas2.jpg" class="card-img" alt="Imagen">
+                        </div>
+                    </div>
+                </div>
+                <a href="views/cardsBody/causas.html" class="btn btn-warning">Ver M&aacute;s</a>
+            </div>
+        </div>
+
+
+        <!-- Soluciones -->
+        <div class="card border-success mb-3">
+            <div class="card-header text-center bg-success">
+                <h1 class="text-white">Soluciones al cambio clim&aacute;tico</h1>
+            </div>
+            <div class="card-body">
+                <!-- Card1 -->
+                <div class="card border-success mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="img/success1.jpg" class="card-img" alt="Imagen">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Recicla.</h4>
+                                <p class="card-text">Reciclar 1 Kg. de latas de aluminio usadas consume diez veces menos
+                                    energía que producirlas; y se utiliza mucha menos energ&aacute;a para fabricar papel
+                                    a
+                                    partir de peri&oacute;dicos viejos que de la pulpa de madera
+                                    Cuando prepares una bebida caliente, hierve s&oacute;lo el agua necesaria.</p>
+                                <p class="card-text"><small class="text-muted">Reciclar es muy importante.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card2 -->
+                <div class="card border-success mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Conduce menos.</h4>
+                                <p class="card-text">Anda, monta en bicicleta, usa el transporte p&uacute;blico.
+                                    Ahorrar&aacute;s 30
+                                    gramos de CO2 por cada 4.5 kil&oacute;metros que no conduzcas. Por cada litro de
+                                    combustible que quema el motor de un coche, se libera una media de 2.5 kilos de CO2,
+                                    seg&uacute;n la Comisi&oacute;n Europea.</p>
+                                <p class="card-text"><small class="text-muted">Utiliza tu bicicleta.</small></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/success2.jpg" class="card-img" alt="Imagen">
+                        </div>
+                    </div>
+                </div>
+                <a href="views/cardsBody/soluciones.html" class="btn btn-success">Ver M&aacute;s</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="bg-primary">
+        <footer class="container pt-5">
+            <div class="row">
+                <div class="div1 col-12 col-lg-6">
+                    <blockquote class="blockquote">
+                        <p class="blockquote-footer m-0">NICOLAS GABRIEL ESCOBAR PEREZ <cite
+                                title="Source Title">#176916.</cite>
+                        </p>
+                        <p class="blockquote-footer m-0">BRYAN ANTHONY GOMEZ L&Oacute;PEZ <cite
+                                title="Source Title">#329518.</cite>
+                        </p>
+                        <p class="blockquote-footer m-0">PAUL FERNANDO TRUJILLO SANCHEZ<cite
+                                title="Source Title">#001114.</cite></p>
+                        <p class="blockquote-footer m-0">JEFFERSON FRANCISCO PINEDA QUINTANILLA <cite
+                                title="Source Title">#352613.</cite></p>
+                    </blockquote>
+                </div>
+
+                <div class="div2 col-12 col-lg-6 iconosRedes">
+                    <a href="https://www.facebook.com/" class="nav-link text-facebook float-left" target="_blank">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/" class="nav-link text-google float-left" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+
+                    <a href="https://twitter.com/" class="nav-link text-twitter float-left" target="_blank">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+        <p class="card-text text-center"><small class="text-muted">Todos los derechos reservados DS29 - @2020</small>
+        </p>
+    </div>
+
+
+    <!-- Login -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="login" action="../index.html">
+                        <div class="form-group">
+                            <label for="email">Usuario</label>
+                            <input type="text" class="form-control" placeholder="Usuario" id="nombres" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Password</label>
+                            <input type="password" class="form-control" placeholder="Password" id="apellidos" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" onsubmit="login()">Ingresar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/f1ceb20255.js" crossorigin="anonymous"></script>
+
+
+    <!-- AlertsJS -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/index.js"></script>
+    <script src="js/clima.js"></script>
+</body>
+
+</html>

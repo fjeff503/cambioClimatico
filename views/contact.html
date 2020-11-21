@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio Clim&aacute;tico</title>
+
+    <!-- Icono -->
+    <link rel="icon" type="image/png" href="../img/logo.ico" />
+
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css"
+        crossorigin="anonymous">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""
+                    loading="lazy">
+                Cambio Clim&aacute;tico
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/covid.html">Covid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/galery.html">Galery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-success my-2 mx-1" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="@getbootstrap">Login</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Formulario -->
+    <div class="container cuerpo">
+        <form id="form" action="../index.html" style="margin-top: 9.5%;" class="mb-5">
+            <h1 class="text-center text-secondary">Contactenos</h1>
+            <div class="form-group">
+                <label for="email">Nombres</label>
+                <input type="text" class="form-control" placeholder="Nombre" id="nombres" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Apellidos</label>
+                <input type="text" class="form-control" placeholder="Apellido" id="apellidos" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electr&oacute;nico</label>
+                <input type="email" class="form-control" placeholder="Email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="optradio">G&eacute;nero</label>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" required>Masculino
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" required>Femenino
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sel1">Nivel de interes:</label>
+                <select class="form-control" id="sel1">
+                    <option>Bajo</option>
+                    <option>Medio</option>
+                    <option>Alto</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sel1">Intereses:</label>
+                <select class="form-control" id="sel1">
+                    <option> Recolecci&oacute;n de basura</option>
+                    <option>Charlas de concientizaci&oacute;n</option>
+                    <option>Ayudar al medio ambiente desde casa</option>
+                    <option>Impulsar campa&ntilde;as de NO EMISIONES de CO2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comentarios:</label>
+                <textarea class="form-control" rows="5" id="comment" required></textarea>
+            </div>
+            <div class="form-group">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1">Recibir notificaciones por
+                        correo
+                        electr&oacute;nico</label>
+                </div>
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                    <label class="custom-control-label" for="customSwitch2">Recibir notificaciones por medio de
+                        llamadas</label>
+                </div>
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                    <label class="custom-control-label" for="customSwitch3">Recibir notificaciones por mensaje de
+                        texto</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="botones">
+                    <button type="submit" class="btn btn-outline-success mr-3 col-3">Enviar</button>
+                    <button type="button" class="btn btn-outline-danger col-3" onclick="noEnviar()">Cancelar</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="bg-primary">
+        <footer class="container pt-5">
+            <div class="row">
+                <div class="div1 col-12 col-lg-6">
+                    <blockquote class="blockquote">
+                        <p class="blockquote-footer m-0">NICOLAS GABRIEL ESCOBAR PEREZ <cite
+                                title="Source Title">#176916.</cite>
+                        </p>
+                        <p class="blockquote-footer m-0">BRYAN ANTHONY GOMEZ L&Oacute;PEZ <cite
+                                title="Source Title">#329518.</cite>
+                        </p>
+                        <p class="blockquote-footer m-0">PAUL FERNANDO TRUJILLO SANCHEZ<cite
+                                title="Source Title">#001114.</cite></p>
+                        <p class="blockquote-footer m-0">JEFFERSON FRANCISCO PINEDA QUINTANILLA <cite
+                                title="Source Title">#352613.</cite></p>
+                    </blockquote>
+                </div>
+
+                <div class="div2 col-12 col-lg-6 iconosRedes">
+                    <a href="https://www.facebook.com/" class="nav-link text-facebook float-left" target="_blank">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/" class="nav-link text-google float-left" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+
+                    <a href="https://twitter.com/" class="nav-link text-twitter float-left" target="_blank">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+        <p class="card-text text-center"><small class="text-muted">Todos los derechos reservados DS29 - @2020</small>
+        </p>
+    </div>
+
+
+    <!-- Login -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="login" action="../index.html">
+                        <div class="form-group">
+                            <label for="email">Usuario</label>
+                            <input type="text" class="form-control" placeholder="Usuario" id="nombres" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Password</label>
+                            <input type="password" class="form-control" placeholder="Password" id="apellidos" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" onsubmit="login()">Ingresar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/f1ceb20255.js" crossorigin="anonymous"></script>
+
+
+    <!-- AlertsJS -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
